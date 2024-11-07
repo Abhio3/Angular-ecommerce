@@ -27,7 +27,9 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+            "node_modules/font-awesome/css/font-awesome.min.css",
+            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "src/styles.css"
             ],
             "scripts": []
           },
@@ -78,12 +80,11 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+           "assets": [
+  "src/assets",
+  "src/favicon.ico"
+],
+
             "styles": [
               "src/styles.css"
             ],
