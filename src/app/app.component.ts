@@ -4,16 +4,21 @@ import { RouterOutlet } from '@angular/router';
 import { PolicyComponent } from './policy/policy.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { SliderComponent } from './slider/slider.component';
+import { BrowserAnimationsModule, BrowserAnimationsModuleConfig } from '@angular/platform-browser/animations';
+
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, PolicyComponent, NavComponent, FooterComponent],
+  imports: [RouterOutlet, CommonModule, PolicyComponent, NavComponent, FooterComponent,SliderComponent,BrowserAnimationsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
-  
+  , 
 })
 export class AppComponent {
+
   title = 'ecommerce';
   url:string = "images/img-4.jpg"
   changeImg(event:any){
@@ -34,5 +39,7 @@ export class AppComponent {
     changeImg4(event:any){
      this.url4 =event.target.src
       }
+      
+    }
  
-  }
+  

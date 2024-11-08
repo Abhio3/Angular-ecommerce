@@ -1,0 +1,7 @@
+<div class="slider">
+<owl-carousel-o [options]="{ loop: true, autoplay: true, nav: true }">
+    <ng-template carouselSlide *ngFor="let image of images">
+      <img [src]="image" alt="Image" />
+    </ng-template>
+  </owl-carousel-o>
+</div>
