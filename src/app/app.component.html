@@ -170,7 +170,16 @@
   </div>
 
 </section>
-<app-slider></app-slider>
+<section class="slider">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide><img src="images/slide1.jpg" alt=""></ng-template>  
+    <ng-template carouselSlide><img src="images/slide2.jpg" alt=""></ng-template>  
+    <ng-template carouselSlide><img src="images/slide3.jpg" alt=""></ng-template>  
+
+ </owl-carousel-o>
+ </section>
+
 <app-policy></app-policy>
+<!-- <app-slider></app-slider> -->
 
 <app-footer></app-footer>
